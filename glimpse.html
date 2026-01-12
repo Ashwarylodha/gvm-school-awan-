@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GVM Glimpse - Full Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .full-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+        .glimpse-card {
+            height: 200px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .glimpse-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        .glimpse-card img:hover {
+            transform: scale(1.1);
+        }
+        .back-btn {
+            display: inline-block;
+            margin: 20px;
+            color: #002e5b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body style="background: #f4f4f4;">
+
+    <header class="school-headline" style="position: relative;">
+        <div class="header-container">
+            <div class="school-title">
+                <h1>GVM Glimpse - फोटो गैलरी</h1>
+                <p>गणेश विद्या मंदिर हायर सेकेंडरी स्कूल आवन</p>
+            </div>
+        </div>
+    </header>
+
+    <a href="index.html" class="back-btn">← Back to Home</a>
+
+    <main class="section-box">
+        <div class="section-title">All Memories</div>
+        <div class="full-gallery">
+            <div class="glimpse-card"><img src="building.jpg"></div>
+            <div class="glimpse-card"><img src="classroom.jpg"></div>
+            <div class="glimpse-card"><img src="playground.jpg"></div>
+            <div class="glimpse-card"><img src="event.jpg"></div>
+            <div class="glimpse-card"><img src="photo5.jpg"></div>
+            <div class="glimpse-card"><img src="photo6.jpg"></div>
+            <div class="glimpse-card"><img src="photo7.jpg"></div>
+            <div class="glimpse-card"><img src="photo8.jpg"></div>
+            <div class="glimpse-card"><img src="photo9.jpg"></div>
+            <div class="glimpse-card"><img src="photo10.jpg"></div>
+            <div class="glimpse-card"><img src="photo11.jpg"></div>
+            <div class="glimpse-card"><img src="photo12.jpg"></div>
+            <div class="glimpse-card"><img src="photo13.jpg"></div>
+            <div class="glimpse-card"><img src="photo14.jpg"></div>
+            <div class="glimpse-card"><img src="photo15.jpg"></div>
+            <div class="glimpse-card"><img src="photo16.jpg"></div>
+            <div class="glimpse-card"><img src="photo17.jpg"></div>
+    </main>
+
+    <footer class="school-footer">
+        <p>© 2024 Ganesh Vidhya Mandir. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,341 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Loading Screen */
+#deadline {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.neon-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #FFA500;
+    box-shadow: 0 0 20px #FFA500;
+    animation: pulse 5s infinite;
+}
+
+.neon-text {
+    color: white;
+    font-size: 1.8rem;
+    margin: 20px 0;
+    text-shadow: 0 0 10px #fff;
+}
+
+.cyan-glow {
+    color: #FFA500;
+}
+
+.progress-container {
+    width: 250px;
+    height: 6px;
+    background: #1a1a1a;
+    border-radius: 10px;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background: #FFA500;
+    animation: loadProgress 5s linear forwards;
+}
+
+@keyframes loadProgress { to { width: 100%; } }
+
+/* Main Header Headline */
+.school-headline {
+    width: 100%;
+    background-color: #002e5b;
+    border-bottom: 3px solid #f1c40f;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.motto-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    background: rgba(0,0,0,0.2);
+}
+
+.logo-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.top-banner {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.school-title {
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.school-title h1 {
+    font-size: 18px;
+}
+
+.school-title p {
+    font-size: 11px;
+    color: #f1c40f;
+}
+
+.page-content {
+    margin-top: 200px;
+    background: #fff;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+/* Footer Styling */
+.school-footer {
+    background-color: #002e5b;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-top: 4px solid #f1c40f;
+}
+
+.footer-social h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Social Icon Buttons */
+.social-icon {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Hover karne par halka bada hoga */
+}
+
+/* Facebook Blue */
+.fb {
+    background-color: #3b5998;
+}
+
+/* Instagram Pink/Purple Gradient */
+.insta {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    font-size: 12px;
+    opacity: 0.8;
+}
+/* News Bar */
+.news-bar { background: #f1c40f; color: #000; padding: 5px 0; font-weight: bold; }
+
+/* Admission Button */
+.admission-section { margin-bottom: 30px; }
+.admission-btn {
+    background: #e74c3c;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50px;
+    display: inline-block;
+    box-shadow: 0 0 15px rgba(231, 76, 60, 0.6);
+    animation: flash 1.5s infinite;
+}
+
+/* About & Sections */
+.about-school, .gallery, .contact-info { padding: 40px 20px; border-bottom: 1px solid #eee; }
+.about-school h2, .gallery h3, .contact-info h3 { color: #002e5b; margin-bottom: 15px; }
+
+/* Gallery Grid */
+.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 20px; }
+.photo { background: #ddd; height: 100px; display: flex; align-items: center; justify-content: center; border-radius: 8px; }
+
+/* Animations */
+@keyframes flash {
+    0% { transform: scale(1); background: #e74c3c; }
+    50% { transform: scale(1.05); background: #c0392b; }
+    100% { transform: scale(1); background: #e74c3c; }
+}
+
+/* Responsive Map */
+.map-container { margin-top: 20px; border: 2px solid #002e5b; border-radius: 10px; overflow: hidden; }
+/* Purani CSS ke niche ise paste karein ya replace karein */
+
+/* 1. Notice Bar Styling */
+.notice-section {
+    background: #f1c40f;
+    display: flex;
+    align-items: center;
+    border-top: 2px solid #fff;
+}
+.notice-label {
+    background: #d35400;
+    color: white;
+    padding: 5px 15px;
+    font-weight: bold;
+    z-index: 2;
+}
+.notice-text {
+    color: #000;
+    font-weight: 600;
+    padding: 5px 0;
+}
+
+/* Page Content Spacing */
+.page-content {
+    margin-top: 210px;
+    background: #f4f4f4;
+    padding-bottom: 50px;
+}
+
+/* Section Box Styling */
+.section-box {
+    background: white;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.section-title {
+    font-size: 22px;
+    color: #002e5b;
+    font-weight: bold;
+    border-left: 5px solid #f1c40f;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* 2. Admission Button Animation */
+.admission-card {
+    text-align: center;
+    background: linear-gradient(135deg, #002e5b, #0056b3);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+.btn-animate {
+    display: inline-block;
+    margin-top: 15px;
+    background: #e74c3c;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    animation: pulse-red 2s infinite;
+}
+
+@keyframes pulse-red {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.7); }
+    70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(231, 76, 60, 0); }
+    100% { transform: scale(1); }
+}
+
+/* 4. Gallery Grid */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.img-box {
+    background: #ddd;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #555;
+    border: 1px dashed #999;
+}
+
+/* 5. Map Box */
+.map-box {
+    margin-top: 15px;
+    height: 200px;
+    background: #eee;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+}
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Isse photo khichegi nahi aur box mein fit rahegi */
+    border-radius: 8px;
+}
+.map-box iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+/* Gallery Photos ko sahi size mein fit karne ke liye */
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Isse photo kategi nahi, box mein set ho jayegi */
+    display: block;
+}
+
+.img-box {
+    background: #eee;
+    height: 150px; /* Photos ki height mobile ke liye perfect hai */
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* Map Box Styling */
+.map-box {
+    margin-top: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid #002e5b;
+}
